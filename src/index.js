@@ -1,4 +1,6 @@
 import $ from 'jquery';
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
+export function mercuryTime(age) {
+  const time =  (age * 365) / 88;
+  return Math.round(time)
+}

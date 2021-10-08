@@ -1,8 +1,8 @@
-import index from "../src/game";
+import {mercuryTime} from "../src/index.js";
 
-describe('index', () => {
+describe('dex', () => {
 
-  test('Check Mercury time',() => {
-    expect(mercuryTime(15).toEqual(62.2));
+  test('Check Mercury time', () => {
+    expect(mercuryTime(15)).toEqual(62);
   })
 })
