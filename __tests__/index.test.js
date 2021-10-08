@@ -1,4 +1,5 @@
 import {mercuryTime} from "../src/index.js";
+import {venusTime} from "../src/index.js";
 
 describe('dex', () => {
 
@@ -7,7 +8,7 @@ describe('dex', () => {
   })
 
   test('Check Venus time', () => {
-    expect(VenusTime(15)).toEqual(24);
+    expect(venusTime(15)).toEqual(21);
   })
 
 
