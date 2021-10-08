@@ -11,5 +11,8 @@ describe('dex', () => {
     expect(venusTime(15)).toEqual(21);
   })
 
+  test('Check Mars time', () => {
+    expect(marsTime(15)).toEqual(8);
+  })
 
 })
