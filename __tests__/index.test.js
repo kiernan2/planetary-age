@@ -17,7 +17,7 @@ describe('dex', () => {
   })
 
   test('Check Jupiter', () => {
-    expect(jupiterTime(15)).toEqual(1)
+    expect(jupiterTime(15)).toEqual(1);
   })
 
 })

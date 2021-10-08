@@ -14,3 +14,4 @@ export function marsTime(age) {
   const time = (age * 365) / 687;
   return Math.round(time);
 }
+
