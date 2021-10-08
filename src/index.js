@@ -10,3 +10,7 @@ export function venusTime(age) {
   return Math.round(time);
 }
 
+export function marsTime(age) {
+  const time = (age * 365) / 687;
+  return Math.round(time);
+}

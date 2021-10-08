@@ -1,5 +1,6 @@
 import {mercuryTime} from "../src/index.js";
 import {venusTime} from "../src/index.js";
+import {marsTime} from "../src/index.js";
 
 describe('dex', () => {
 
@@ -13,6 +14,10 @@ describe('dex', () => {
 
   test('Check Mars time', () => {
     expect(marsTime(15)).toEqual(8);
+  })
+
+  test('Check Jupiter', () => {
+    expect(jupiterTime(15)).toEqual(1)
   })
 
 })
