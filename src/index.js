@@ -25,3 +25,10 @@ export function mercuryConverter(age, lifeTime) {
   const life = (mercuryTime(lifeTime));
   return (life - time);
 }
+
+export function venusConverter(age, lifeTime) {
+  const time = (venusTime(age));
+  const life = (venusTime(lifeTime));
+  return (life - time);
+}
+
