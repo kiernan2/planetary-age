@@ -20,3 +20,8 @@ export function jupiterTime(age) {
   return Math.round(time);
 }
 
+export function mercuryConverter(age, lifeTime) {
+  const time = (mercuryTime(age));
+  const life = (mercuryTime(lifeTime));
+  return (life - time);
+}
