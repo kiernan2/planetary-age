@@ -32,3 +32,8 @@ export function venusConverter(age, lifeTime) {
   return (life - time);
 }
 
+export function marsConverter(age, lifeTime) {
+  const time = (marsTime(age));
+  const life = (marsTime(lifeTime));
+  return (life - time);
+}

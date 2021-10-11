@@ -4,6 +4,7 @@ import {marsTime} from "../src/index.js";
 import {jupiterTime} from "../src/index.js";
 import {mercuryConverter} from "../src/index.js";
 import {venusConverter} from "../src/index.js";
+import {marsConverter} from "../src/index.js";
 
 describe('index', () => {
 
@@ -34,4 +35,5 @@ describe('index', () => {
   test('Check Mars Converter', () => {
     expect(marsConverter(20,80)).toEqual(32);
   })
+
 })
