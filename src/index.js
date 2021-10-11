@@ -19,3 +19,4 @@ export function jupiterTime(age) {
   const time = (age * 365) / 4333;
   return Math.round(time);
 }
+
