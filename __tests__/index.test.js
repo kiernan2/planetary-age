@@ -41,4 +41,11 @@ describe('index', () => {
     expect(jupiterConverter(20,80)).toEqual(5);
   });
 
+  test('Check Time over lifetime', () => {
+    expect(mercuryConverter(100,80)).toEqual("Error life greater than life expectancy");
+    expect(venusConverter(100,80)).toEqual("Error life greater than life expectancy");
+    expect(marsConverter(100,80)).toEqual("Error life greater than life expectancy");
+    expect(jupiterConverter(100,80)).toEqual("Error life greater than life expectancy");
+  })
+
 })
