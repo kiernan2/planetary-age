@@ -22,23 +22,35 @@ export function jupiterTime(age) {
 export function mercuryConverter(age, lifeTime) {
   const time = (mercuryTime(age));
   const life = (mercuryTime(lifeTime));
+  if(time > life) {
+    return (time - life);
+  }
   return (life - time);
 }
 
 export function venusConverter(age, lifeTime) {
   const time = (venusTime(age));
   const life = (venusTime(lifeTime));
+  if(time > life) {
+    return (time - life);
+  }
   return (life - time);
 }
 
 export function marsConverter(age, lifeTime) {
   const time = (marsTime(age));
   const life = (marsTime(lifeTime));
+  if(time > life) {
+    return (time - life);
+  }
   return (life - time);
 }
 
 export function jupiterConverter(age, lifeTime) {
   const time = (jupiterTime(age));
   const life = (jupiterTime(lifeTime));
+  if(time > life) {
+    return (time - life);
+  }
   return (life - time);
 }
