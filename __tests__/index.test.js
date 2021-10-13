@@ -24,9 +24,9 @@ describe('index', () => {
     expect(testAge.venusTime(testAge.age)).toEqual(21);
   });
 
-  // test('Check Mars time', () => {
-  //   expect(marsTime(15)).toEqual(8);
-  // });
+  test('Check Mars time', () => {
+    expect(testAge.marsTime(testAge.age)).toEqual(8);
+  });
 
   // test('Check Jupiter time', () => {
   //   expect(jupiterTime(15)).toEqual(1);
@@ -44,9 +44,11 @@ describe('index', () => {
     expect(testAge.venusAge).toEqual(86);
   });
 
-  // test('Check Mars Converter', () => {
-  //   expect(marsConverter(20,80)).toEqual(32);
-  // });
+  test('Check Mars Converter', () => {
+    testAge = new Age(20);
+    testAge.marsConverter();
+    expect(testAge.marsAge).toEqual(32);
+  });
 
   // test('Check Jupiter Converter', () => {
   //   expect(jupiterConverter(20,80)).toEqual(5);
