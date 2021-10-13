@@ -4,6 +4,7 @@ export default class Age {
     this.mercuryAge = 0;
     this.venusAge = 0;
     this.marsAge = 0;
+    this.jupiterAge = 0;
     this.lifeTime = 80;
   }
   
@@ -22,8 +23,8 @@ export default class Age {
     return Math.round(time);
   }
   
-  jupiterTime() {
-    const time = (this.age * 365) / 4333;
+  jupiterTime(age) {
+    const time = (age * 365) / 4333;
     return Math.round(time);
   }
 
@@ -57,13 +58,14 @@ export default class Age {
     }
   }
 
-  jupiterConverter(age, lifeTime) {
-    const time = (jupiterTime(age));
-    const life = (jupiterTime(lifeTime));
+  jupiterConverter() {
+    const time = (this.jupiterTime(this.age));
+    const life = (this.jupiterTime(this.lifeTime));
     if(time > life) {
-      return (time - life);
+      this.jupiterAge = (time - life);
+    } else {
+      this.jupiterAge = (life - time);
     }
-    return (life - time);
   }
 }
 

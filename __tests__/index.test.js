@@ -28,9 +28,9 @@ describe('index', () => {
     expect(testAge.marsTime(testAge.age)).toEqual(8);
   });
 
-  // test('Check Jupiter time', () => {
-  //   expect(jupiterTime(15)).toEqual(1);
-  // });
+  test('Check Jupiter time', () => {
+    expect(testAge.jupiterTime(testAge.age)).toEqual(1);
+  });
 
   test('Check Mercury Converter', () => {
     testAge = new Age(20);
@@ -50,9 +50,11 @@ describe('index', () => {
     expect(testAge.marsAge).toEqual(32);
   });
 
-  // test('Check Jupiter Converter', () => {
-  //   expect(jupiterConverter(20,80)).toEqual(5);
-  // });
+  test('Check Jupiter Converter', () => {
+    testAge = new Age(20);
+    testAge.jupiterConverter();
+    expect(testAge.jupiterAge).toEqual(5);
+  });
 
   // test('Check Time over lifetime', () => {
   //   expect(mercuryConverter(100,80)).toEqual(83);
