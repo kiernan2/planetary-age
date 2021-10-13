@@ -10,15 +10,19 @@ import Age from "../src/index.js";
 
 describe('index', () => {
 
-  test('Check Mercury time', () => {
-    let testAge = new Age(15);
-    expect(testAge.mercuryTime()).toEqual(62);
+  let testAge;
+
+  beforeEach(() => {
+    testAge = new Age(15);
   });
 
-  // test('Check Venus time', () => {
-  //   let testAge = new Age(15);
-  //   expect(testAge.venusTime()).toEqual(21);
-  // });
+  test('Check Mercury time', () => {
+    expect(testAge.mercuryTime(testAge.age)).toEqual(62);
+  });
+
+  test('Check Venus time', () => {
+    expect(testAge.venusTime(testAge.age)).toEqual(21);
+  });
 
   // test('Check Mars time', () => {
   //   expect(marsTime(15)).toEqual(8);
@@ -28,9 +32,11 @@ describe('index', () => {
   //   expect(jupiterTime(15)).toEqual(1);
   // });
 
-  // test('Check Mercury Converter', () => {
-  //   expect(mercuryConverter(20,80)).toEqual(249);
-  // });
+  test('Check Mercury Converter', () => {
+    testAge = new Age(20);
+    testAge.mercuryConverter();
+    expect(testAge.mercuryAge).toEqual(249);
+  });
 
   // test('Check Venus Converter', () => {
   //   expect(venusConverter(20,80)).toEqual(86);
