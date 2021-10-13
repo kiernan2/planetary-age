@@ -2,7 +2,7 @@ export default class Age {
   constructor(age) {
     this.age = age;
     this.mercuryAge = 0;
-    this.mercuryLifetime = 0;
+    this.venusAge = 0;
     this.lifeTime = 80;
   }
   
@@ -11,8 +11,8 @@ export default class Age {
     return Math.round(time);
   }
   
-  venusTime() {
-    const time = (this.age * 365) / 255;
+  venusTime(age) {
+    const time = (age * 365) / 255;
     return Math.round(time);
   }
   
@@ -37,12 +37,13 @@ export default class Age {
   }
 
   venusConverter() {
-    const time = (venusTime(age));
-    const life = (venusTime(lifeTime));
+    const time = this.venusTime(this.age);
+    const life = this.venusTime(this.lifeTime);
     if(time > life) {
-      return (time - life);
+      this.venusAge = (time - life);
+    } else {
+      this.venusAge = (life - time);
     }
-    return (life - time);
   }
   
   marsConverter(age, lifeTime) {

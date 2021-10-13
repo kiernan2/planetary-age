@@ -38,9 +38,11 @@ describe('index', () => {
     expect(testAge.mercuryAge).toEqual(249);
   });
 
-  // test('Check Venus Converter', () => {
-  //   expect(venusConverter(20,80)).toEqual(86);
-  // });
+  test('Check Venus Converter', () => {
+    testAge = new Age(20);
+    testAge.venusConverter();
+    expect(testAge.venusAge).toEqual(86);
+  });
 
   // test('Check Mars Converter', () => {
   //   expect(marsConverter(20,80)).toEqual(32);
