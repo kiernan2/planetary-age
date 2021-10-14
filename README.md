@@ -1,31 +1,37 @@
-# (Application Name)
+# Super Galactic Age Calculator
 
 #### (Brief Description of Application)
 
-#### By (Your Name Here)
+  A series of mathematical algorithms to determine your age relative to other planets
+
+#### By Kiernan Beattie
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* JavaScript 
+* Jest
+* WebPack
+* Node & npm
 
 ## Description
 
+  A series of mathematical algorithms to determine your age relative to other planets
+
+
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Open a terminal_
+* _Enter this: `git clone https://github.com/kiernan2/Planetary-Age.git`_
+* _Change directory into project folder_
+* _run `npm install`_
+* _run `npm run test`_
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _N/a
 
 ## License
+
+  MIT
 
 ## Contact Information
