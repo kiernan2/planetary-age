@@ -56,11 +56,16 @@ describe('index', () => {
     expect(testAge.jupiterAge).toEqual(5);
   });
 
-  // test('Check Time over lifetime', () => {
-  //   expect(mercuryConverter(100,80)).toEqual(83);
-  //   expect(venusConverter(100,80)).toEqual(28);
-  //   expect(marsConverter(100,80)).toEqual(10);
-  //   expect(jupiterConverter(100,80)).toEqual(1);
-  // });
+  test('Check Time over lifetime', () => {
+    testAge = new Age(100)
+    testAge.mercuryConverter();
+    expect(testAge.mercuryAge).toEqual(83);
+    testAge.venusConverter();
+    expect(testAge.venusAge).toEqual(28);
+    testAge.marsConverter();
+    expect(testAge.marsAge).toEqual(10);
+    testAge.jupiterConverter();
+    expect(testAge.jupiterAge).toEqual(1);
+  });
 
 })
